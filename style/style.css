@@ -1,0 +1,119 @@
+:root {
+    --color-white: #fff;
+    --color-background: #eee;
+    --color-font: #333;
+    --font-size: 1.6rem; 
+} 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--font-size);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--color-font);
+    line-height: 1.5;
+    font-weight: 400;
+}
+#main {
+    background-color: var(--color-background);
+    max-width: 99%;
+    margin: 3rem auto 2rem auto;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.header {
+    margin: 3rem 0;
+}
+.header__title {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
+.secondary-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+.text-center {
+    text-align: center;
+}
+#img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .img-caption {
+    margin: 15px 0 5px 0;
+    opacity: .9;
+  }
+.tribute-info__title {
+    margin: 4rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.tribute-info__list {
+    max-width: 58rem;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+    list-style-type: disc;
+}
+.list-item:not(:last-child){
+    padding-bottom: 2rem;
+}
+.bold {
+    font-weight: bold;
+}
+#quote {
+    max-width: 59rem;
+    font-style: italic;
+}
+#quote blockquote, 
+#quote figcaption {
+    padding-bottom: 2rem;
+}
+.wiki {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+#wiki-link {
+    opacity: .8;
+}
+
+/* Media */
+
+@media (max-width: 660px){
+    .header {
+        margin: 1rem 0;
+    }
+    .tribute-info__title {
+        margin: 1.5rem 0;
+    }
+    .tribute-info__list {
+        margin: 0 2rem;
+    }
+    .list-item {
+        padding-bottom: 1.5rem;
+    }
+}
